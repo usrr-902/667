@@ -1,0 +1,91 @@
+/**
+ * @name 667
+ * @description Thème 667
+ * @author 902 Killuavie
+ * @version 1.0.0
+ * @source https://github.com/902/667-Theme
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+
+:root {
+  --667-green: #00ff88;
+  --background-primary: #0b0b0b;
+  --background-secondary: #131313;
+  --background-tertiary: #1a1a1a;
+  --text-normal: var(--667-green);
+  --text-muted: #888;
+  --font-primary: "Share Tech Mono", monospace;
+  --logo-url: url("https://i.imgur.com/jQEVZan.png"); /* <-- logo 667 ici */
+}
+
+* {
+  font-family: var(--font-primary) !important;
+}
+
+.theme-dark,
+.theme-light {
+  background-color: var(--background-primary) !important;
+  color: var(--text-normal) !important;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  width: 200px;
+  height: 200px;
+  background-image: var(--logo-url);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.05;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.appMount-3lHmkl,
+.app-2CXKsg {
+  background-color: var(--background-primary) !important;
+}
+
+.container-2cd8Mz,
+.chat-2ZfjoI {
+  background-color: var(--background-secondary) !important;
+}
+
+.sidebar-1tnWFu,
+.members-3WRCEx {
+  background-color: var(--background-tertiary) !important;
+}
+
+.channelTextArea-1FufC0 {
+  background-color: #111 !important;
+  border: 1px solid var(--667-green);
+}
+
+.button-1EGGcP,
+.button-ejjZWC {
+  background-color: transparent !important;
+  border: 1px solid var(--667-green);
+  color: var(--667-green) !important;
+  transition: all 0.3s ease;
+}
+
+.button-1EGGcP:hover,
+.button-ejjZWC:hover {
+  background-color: var(--667-green) !important;
+  color: #000 !important;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--667-green);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: #111;
+}

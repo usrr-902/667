@@ -1,0 +1,49 @@
+/**
+ * @name Gold Transparent Theme
+ * @author 902
+ * @version 1.0
+ * @description Thème simple doré avec interface transparente et barres flottantes
+ */
+
+:root {
+  --gold-color: #FFD700;
+  --background-transparent: rgba(0, 0, 0, 0.3);
+  --background-blur: blur(10px);
+  --scrollbar-thumb: #bfa134;
+}
+
+/* Fond principal transparent avec flou */
+.theme-dark {
+  background-color: var(--background-transparent) !important;
+  backdrop-filter: var(--background-blur);
+  color: var(--gold-color) !important;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
+}
+
+/* Zones principales (liste d’amis, canal, chat) transparentes et flottantes */
+.theme-dark .container-1giGLh,
+.theme-dark .content-2CLwUE,
+.theme-dark .sidebar-2K8pFh,
+.theme-dark .scroller-2FKFPG {
+  background-color: var(--background-transparent) !important;
+  backdrop-filter: var(--background-blur);
+  border-radius: 15px;
+  margin: 8px;
+}
+
+/* Texte principal en doré */
+.theme-dark .markup-2BOw-j,
+.theme-dark .messageContent-2qWWxC {
+  color: var(--gold-color) !important;
+}
+
+/* Barres de scroll dorées */
+.theme-dark ::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb) !important;
+  border-radius: 10px;
+}
+
+/* Suppression des ombres pour un effet plus épuré */
+.theme-dark .boxShadow-eYRo6S {
+  box-shadow: none !important;
+}

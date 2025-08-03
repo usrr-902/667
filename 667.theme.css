@@ -1,22 +1,106 @@
 /**
-  *	@name 667
-  *	@author 902
-  *	@version 1.0.1
-  *	@description Highly customized and customizable theme for Discord
-  * @source https://github.com/usrr-902/667/667.theme.css                                                                                                                                                                                                                                                 
-*/
-@import url('https://usrr-902.github.io/usrr-902/BetterDiscordAddons/Theme/667/667.theme.css');
+ * @name 667
+ * @author usrr-902
+ * @version 1.0.0
+ * @description Thème 667
+ * @source https://github.com/usrr-902/667
+ * @website https://github.com/usrr-902
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap");
 
 :root {
-  --667-bg: url(https://i.imgur.com/weOUkrT.png);
-  --667-home-icon: url(https://imgur.com/gallery/667-logo-RddyweP);
-  --667-color1: #006400;
-  --667-color2: #000000;
-  --667-color3: #DFFF00;
-  --watermark-filter-invert: 0%;
-  --watermark-filter-sepia: 50%;
-  --watermark-filter-saturate: 3000%;
-  --watermark-filter-hue-rotate: 150deg;
-  --watermark-filter-brightness: 100%;
-  --watermark-filter-contrast: 200%;
+  --main-color: #ff6a00;
+  --main-transparent: rgba(255, 106, 0, 0.1);
+  --main-transparent-2: rgba(255, 106, 0, 0.2);
+  --background-overlay: rgba(0, 0, 0, 0.6);
+  --background-img: url("https://i.imgur.com/f9kF5Lf.jpeg");
+  --logo-img: url("https://i.imgur.com/RLUzLVA.png");
+  --font: 'Outfit', sans-serif;
+}
+
+/* Background principal */
+body {
+  background: var(--background-img) center center/cover no-repeat fixed !important;
+  font-family: var(--font) !important;
+}
+
+/* Logo discret */
+.appMount-3lHmkl::before {
+  content: "";
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 250px;
+  height: 250px;
+  background-image: var(--logo-img);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.04;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Transparence et blur */
+.app-2CXKsg,
+.bg-1QIAus,
+.container-2cd8Mz,
+.chat-2ZfjoI,
+.sidebar-1tnWFu,
+.membersWrap-3NUR2t,
+.container-1NXEtd,
+.scroller-3X7KbA,
+.panels-3wFtMD,
+.header-3OsQeK,
+.container-YkUktl,
+.messagesWrapper-RpOMA3,
+.content-1jQy2l,
+.content-2a4AW9,
+.title-3qD0b-,
+.toolbar-3_r2xA {
+  background-color: var(--background-overlay) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--main-transparent);
+}
+
+/* Texte */
+* {
+  color: #ffdab9 !important;
+  font-family: var(--font) !important;
+}
+
+/* Champs texte */
+.channelTextArea-1FufC0 {
+  background-color: rgba(0, 0, 0, 0.4) !important;
+  backdrop-filter: blur(6px);
+  border: 1px solid var(--main-color);
+}
+
+/* Boutons */
+.button-1EGGcP,
+.button-ejjZWC {
+  background-color: transparent !important;
+  border: 1px solid var(--main-color);
+  color: var(--main-color) !important;
+  transition: all 0.3s ease;
+}
+
+.button-1EGGcP:hover,
+.button-ejjZWC:hover {
+  background-color: var(--main-color) !important;
+  color: #000 !important;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
 }

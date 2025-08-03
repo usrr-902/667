@@ -1,0 +1,96 @@
+/**
+ * @name 667 Core
+ * @author usrr-902
+ * @version 1.0
+ * @description Thème Discord indépendant inspiré du 667 : orange / noir / clean
+ */
+
+:root {
+  --main-color: #ff6a00;
+  --secondary-color: #0b0b0b;
+  --accent-color: #ff9340;
+  --background-image: url("https://i.imgur.com/f9kF5Lf.jpeg");
+  --home-icon: url("https://i.imgur.com/RLUzLVA.png");
+  --font: 'Outfit', sans-serif;
+}
+
+/* Import de police moderne */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+/* Fond de l'app */
+body,
+.theme-dark,
+.appMount,
+.appMount *, 
+.app-3xd6d0 {
+  background: var(--secondary-color) !important;
+  background-image: var(--background-image);
+  background-size: cover;
+  background-position: center;
+  font-family: var(--font) !important;
+  color: var(--main-color) !important;
+}
+
+/* Fond semi-transparent des conversations et panels */
+.container-2cd8Mz,
+.chatContent-3KubbW,
+.membersWrap-3NUR2t,
+.chat-2ZfjoI,
+.scroller-2FKFPG,
+.sidebar-1tnWFu,
+.panels-3wFtMD,
+.content-1jQy2l {
+  background-color: rgba(0, 0, 0, 0.4) !important;
+  backdrop-filter: blur(6px);
+}
+
+/* Couleur des textes */
+.messageContent-2qWWxC,
+.markup-eYLPri,
+.username-1A8OIy,
+.nameTag-3uD-yy,
+.channelName-3KPsGw {
+  color: var(--main-color) !important;
+}
+
+/* Couleurs de hover et active */
+.containerDefault-YUSmu3:hover,
+.modeSelected-3DmyhH,
+.modeSelected-3DmyhH .content-1x5b-n {
+  background-color: rgba(255, 106, 0, 0.2) !important;
+}
+
+/* Icône Home 667 */
+.homeIcon-r0w4ny {
+  content: var(--home-icon) !important;
+  background-image: var(--home-icon) !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  width: 48px;
+  height: 48px;
+}
+
+/* Bordures et séparateurs */
+.divider-2rZFJK,
+.separator-2lLxgE {
+  background-color: var(--accent-color) !important;
+  opacity: 0.2;
+}
+
+/* Coins arrondis pour un effet plus soft */
+.containerDefault-YUSmu3,
+.container-1oeRFJ,
+.channel-2QD9_O,
+.chat-2ZfjoI,
+.panels-3wFtMD {
+  border-radius: 16px !important;
+}
+
+/* Scrollbar personnalisée */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+  border-radius: 10px;
+}

@@ -1,37 +1,51 @@
+/**
+ * @name 667Theme
+ * @author usrr-902
+ * @version 1.0
+ * @description Thème simple noir & vert style 667 compatible Vancord
+ */
+
 :root {
-  --main-color: #ff6a00;
-  --background-color: #0b0b0b;
-  --background-image: url("https://i.imgur.com/f9kF5Lf.jpeg");
-  --font-family: 'Outfit', sans-serif;
+  --background-primary: #0a3d27;  
+  --background-secondary: #000000; 
+  --text-normal: #9afc86;          
+  --scrollbar-thumb: #5ca65c;
+  
+  
+  --background-image: url('https://i.imgur.com/your667logo.png');
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
-
-body, .appMount {
-  background-color: var(--background-color) !important;
+.theme-dark {
+  background-color: var(--background-secondary) !important;
+  color: var(--text-normal) !important;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif !important;
   background-image: var(--background-image);
-  background-size: cover !important;
-  background-position: center !important;
-  font-family: var(--font-family) !important;
-  color: var(--main-color) !important;
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 120px 120px;
 }
 
-.container-2cd8Mz,
-.chatContent-3KubbW,
-.membersWrap-3NUR2t,
-.chat-2ZfjoI,
-.scroller-2FKFPG,
-.sidebar-1tnWFu,
-.panels-3wFtMD,
-.content-1jQy2l {
-  background-color: rgba(11, 11, 11, 0.6) !important;
-  backdrop-filter: blur(8px);
+
+.theme-dark .content-2CLwUE,
+.theme-dark .container-1giGLh {
+  background-color: var(--background-primary) !important;
+  border-radius: 10px;
+  opacity: 0.9;
 }
 
-.messageContent-2qWWxC,
-.markup-eYLPri,
-.username-1A8OIy,
-.nameTag-3uD-yy,
-.channelName-3KPsGw {
-  color: var(--main-color) !important;
+
+.theme-dark .markup-2BOw-j,
+.theme-dark .messageContent-2qWWxC {
+  color: var(--text-normal) !important;
+}
+
+
+.theme-dark ::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb) !important;
+  border-radius: 10px;
+}
+
+
+.theme-dark .boxShadow-eYRo6S {
+  box-shadow: none !important;
 }

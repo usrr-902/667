@@ -16,7 +16,7 @@
   --text-normal: var(--667-green);
   --text-muted: #888;
   --font-primary: "Share Tech Mono", monospace;
-  --logo-url: url("https://i.imgur.com/jQEVZan.png"); /* <-- logo 667 ici */
+  --logo-url: url("https://i.imgur.com/jQEVZan.png");
 }
 
 * {

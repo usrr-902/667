@@ -1,106 +1,47 @@
 /**
- * @name 667
- * @author usrr-902
- * @version 1.0.0
- * @description Thème 667
- * @source https://github.com/usrr-902/667
- * @website https://github.com/usrr-902
- */
+  * @name 667
+  * @author usrr-902
+  * @version 1.0
+  * @description Version personnalisée du thème Ocean aux couleurs 667 (orange / noir)
+  * @authorId 
+  * @authorLink 
+  * @source https://github.com/usrr-902/667
+  * @website 
+  * @donate 
+  * @invite 
+*/
 
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap");
+/*
+ ________  ________  _______   ________  ________                                                         
+|\   __  \|\   ____\|\  ___ \ |\   __  \|\   ___  \                                                       
+\ \  \|\  \ \  \___|\ \   __/|\ \  \|\  \ \  \\ \  \                                                      
+ \ \  \\\  \ \  \    \ \  \_|/_\ \   __  \ \  \\ \  \                                                     
+  \ \  \\\  \ \  \____\ \  \_|\ \ \  \ \  \ \  \\ \  \                                                    
+   \ \_______\ \_______\ \_______\ \__\ \__\ \__\\ \__\                                                   
+    \|_______|\|_______|\|_______|\|__|\|__|\|__| \|__|                                                   
+
+ ________      ___    ___      ________  _______   ___      ___ _______   ___      ___ ___  ___           
+|\   __  \    |\  \  /  /|    |\   ___ \|\  ___ \ |\  \    /  /|\  ___ \ |\  \    /  /|\  \|\  \          
+\ \  \|\ /_   \ \  \/  / /    \ \  \_|\ \ \   __/|\ \  \  /  / | \   __/|\ \  \  /  / | \  \ \  \         
+ \ \   __  \   \ \    / /      \ \  \ \\ \ \  \_|/_\ \  \/  / / \ \  \_|/_\ \  \/  / / \ \  \ \  \        
+  \ \  \|\  \   \/  /  /        \ \  \_\\ \ \  \_|\ \ \    / /   \ \  \_|\ \ \    / /   \ \  \ \  \____   
+   \ \_______\__/  / /           \ \_______\ \_______\ \__/ /     \ \_______\ \__/ /     \ \__\ \_______\
+    \|_______|\___/ /             \|_______|\|_______|\|__|/       \|_______|\|__|/       \|__|\|_______|
+             \|___|/                                                                                                                                    
+*/
+
+@import url('https://devevil99.github.io/devevil/BetterDiscordAddons/Theme/Ocean/Ocean.theme.css');
 
 :root {
-  --main-color: #ff6a00;
-  --main-transparent: rgba(255, 106, 0, 0.1);
-  --main-transparent-2: rgba(255, 106, 0, 0.2);
-  --background-overlay: rgba(0, 0, 0, 0.6);
-  --background-img: url("https://i.imgur.com/f9kF5Lf.jpeg");
-  --logo-img: url("https://i.imgur.com/RLUzLVA.png");
-  --font: 'Outfit', sans-serif;
-}
-
-/* Background principal */
-body {
-  background: var(--background-img) center center/cover no-repeat fixed !important;
-  font-family: var(--font) !important;
-}
-
-/* Logo discret */
-.appMount-3lHmkl::before {
-  content: "";
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  width: 250px;
-  height: 250px;
-  background-image: var(--logo-img);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  opacity: 0.04;
-  z-index: 0;
-  pointer-events: none;
-}
-
-/* Transparence et blur */
-.app-2CXKsg,
-.bg-1QIAus,
-.container-2cd8Mz,
-.chat-2ZfjoI,
-.sidebar-1tnWFu,
-.membersWrap-3NUR2t,
-.container-1NXEtd,
-.scroller-3X7KbA,
-.panels-3wFtMD,
-.header-3OsQeK,
-.container-YkUktl,
-.messagesWrapper-RpOMA3,
-.content-1jQy2l,
-.content-2a4AW9,
-.title-3qD0b-,
-.toolbar-3_r2xA {
-  background-color: var(--background-overlay) !important;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid var(--main-transparent);
-}
-
-/* Texte */
-* {
-  color: #ffdab9 !important;
-  font-family: var(--font) !important;
-}
-
-/* Champs texte */
-.channelTextArea-1FufC0 {
-  background-color: rgba(0, 0, 0, 0.4) !important;
-  backdrop-filter: blur(6px);
-  border: 1px solid var(--main-color);
-}
-
-/* Boutons */
-.button-1EGGcP,
-.button-ejjZWC {
-  background-color: transparent !important;
-  border: 1px solid var(--main-color);
-  color: var(--main-color) !important;
-  transition: all 0.3s ease;
-}
-
-.button-1EGGcP:hover,
-.button-ejjZWC:hover {
-  background-color: var(--main-color) !important;
-  color: #000 !important;
-}
-
-/* Scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
-}
-::-webkit-scrollbar-thumb {
-  background-color: var(--main-color);
-  border-radius: 10px;
-}
-::-webkit-scrollbar-track {
-  background-color: transparent;
+  --ocean-bg: url(https://i.imgur.com/f9kF5Lf.jpeg); /* fond sombre */
+  --ocean-home-icon: url(https://i.imgur.com/RLUzLVA.png); /* logo 667 orange */
+  --ocean-color1: #ff6a00;  /* orange 667 */
+  --ocean-color2: #0b0b0b;  /* noir profond */
+  --ocean-color3: #ff9340;  /* orange clair / contraste */
+  --watermark-filter-invert: 0%;
+  --watermark-filter-sepia: 30%;
+  --watermark-filter-saturate: 2500%;
+  --watermark-filter-hue-rotate: 15deg;
+  --watermark-filter-brightness: 100%;
+  --watermark-filter-contrast: 120%;
 }

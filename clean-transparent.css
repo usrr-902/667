@@ -10,40 +10,40 @@
 .theme-dark {
   --dplus-backdrop: none;
 
-
+  
   --dplus-accent-color-hue: 140;
-  --dplus-accent-color-saturation: 100%;
-  --dplus-accent-color-lightness: 22%;
+  --dplus-accent-color-saturation: 50%;
+  --dplus-accent-color-lightness: 35%;
 
  
   --dplus-foreground-color-hue-base: 140;
   --dplus-foreground-color-hue-links: 140;
-  --dplus-foreground-color-saturation-amount: 0.5;
-  --dplus-foreground-color-lightness-amount: 1.2;
+  --dplus-foreground-color-saturation-amount: 0.4;
+  --dplus-foreground-color-lightness-amount: 1.4;
 
  
   --dplus-background-color-hue: 140;
-  --dplus-background-color-saturation-amount: 1;
-  --dplus-background-color-lightness-amount: 0.03;
-  --dplus-background-color-alpha: 0.9;
+  --dplus-background-color-saturation-amount: 0.2;
+  --dplus-background-color-lightness-amount: 0.05;
+  --dplus-background-color-alpha: 0.85;
 }
 
 .theme-light {
   --dplus-backdrop: none;
 
   --dplus-accent-color-hue: 140;
-  --dplus-accent-color-saturation: 100%;
-  --dplus-accent-color-lightness: 22%;
+  --dplus-accent-color-saturation: 50%;
+  --dplus-accent-color-lightness: 35%;
 
   --dplus-foreground-color-hue-base: 140;
   --dplus-foreground-color-hue-links: 140;
-  --dplus-foreground-color-saturation-amount: 0.5;
-  --dplus-foreground-color-lightness-amount: 1.2;
+  --dplus-foreground-color-saturation-amount: 0.4;
+  --dplus-foreground-color-lightness-amount: 1.4;
 
   --dplus-background-color-hue: 140;
-  --dplus-background-color-saturation-amount: 1;
-  --dplus-background-color-lightness-amount: 0.03;
-  --dplus-background-color-alpha: 0.9;
+  --dplus-background-color-saturation-amount: 0.2;
+  --dplus-background-color-lightness-amount: 0.05;
+  --dplus-background-color-alpha: 0.85;
 }
 
 :root {

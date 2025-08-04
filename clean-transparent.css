@@ -1,0 +1,135 @@
+/* === Clean Transparent Discord Theme === */
+/* Author: 902 | Theme base: Vendcord Compatible */
+/* Colors: #00561b (green), #000000 (black) */
+
+:root {
+  --accent-color: #00561b;
+  --background-dark: rgba(0, 0, 0, 0.6);
+  --background-light: rgba(0, 0, 0, 0.3);
+  --text-primary: #ffffff;
+  --text-secondary: #bbbbbb;
+  --radius: 10px;
+  --transition: 0.25s ease;
+}
+
+/* ==== General Layout ==== */
+body,
+.theme-dark {
+  background-color: transparent !important;
+}
+
+.appMount-3VJmYg,
+.app-2CXKsg,
+.wrapper-1_HaEi,
+.content-1jQy2l {
+  background: transparent !important;
+}
+
+/* ==== Server List ==== */
+.wrapper-3NnKdC {
+  background-color: var(--background-dark) !important;
+  border-radius: var(--radius);
+  transition: var(--transition);
+}
+
+/* ==== Sidebar ==== */
+.sidebar-1tnWFu,
+.panels-3wFtMD {
+  background-color: var(--background-dark) !important;
+  border-radius: var(--radius);
+  transition: var(--transition);
+}
+
+/* ==== Channel list ==== */
+.container-2o3qEW {
+  background-color: var(--background-dark) !important;
+  border-radius: var(--radius);
+  transition: var(--transition);
+}
+
+/* ==== Chat ==== */
+.chat-2ZfjoI {
+  background-color: var(--background-light) !important;
+  backdrop-filter: blur(8px);
+  border-radius: var(--radius);
+  transition: var(--transition);
+  color: var(--text-primary);
+}
+
+/* ==== Message Bubbles ==== */
+.messageContent-2t3eCI {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 8px 12px;
+  border-radius: var(--radius);
+  color: var(--text-primary);
+  transition: var(--transition);
+}
+
+.messageContent-2t3eCI:hover {
+  background-color: rgba(0, 86, 27, 0.4);
+}
+
+/* ==== Input Box ==== */
+.channelTextArea-1FufC0 {
+  background-color: rgba(0, 0, 0, 0.4) !important;
+  border: 1px solid var(--accent-color);
+  border-radius: var(--radius);
+  transition: var(--transition);
+}
+
+/* ==== Mentions & Highlights ==== */
+.mention {
+  color: var(--accent-color) !important;
+  background-color: rgba(0, 86, 27, 0.3) !important;
+  border-radius: var(--radius);
+}
+
+/* ==== Scrollbar ==== */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--accent-color);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* ==== Hover Effects ==== */
+.containerDefault-YUSmu3:hover,
+.wrapper-1BJsBx:hover {
+  background-color: rgba(0, 86, 27, 0.15) !important;
+}
+
+/* ==== Modals / Popups ==== */
+.layer-2KE1M9,
+.modal-2LIEKY {
+  background-color: var(--background-dark) !important;
+  border-radius: var(--radius);
+  backdrop-filter: blur(12px);
+}
+
+/* ==== User Popouts ==== */
+.userPopout-2j1gM4 {
+  background-color: var(--background-dark) !important;
+  border-radius: var(--radius);
+}
+
+/* ==== Settings ==== */
+.standardSidebarView-3F1I7i {
+  background-color: var(--background-light) !important;
+}
+
+/* ==== Misc Elements ==== */
+.button-2fCJ0o,
+.buttonColor-3bP3fX {
+  background-color: var(--accent-color) !important;
+  color: #fff !important;
+  border-radius: var(--radius);
+}
+
+/* ==== Transparent Backgrounds Everywhere ==== */
+[class*="background-"] {
+  background-color: transparent !important;
+}

@@ -3,25 +3,26 @@
  * @author usrr-902
  * @version 1.0.0
  * @description A sleek, customizable Discord theme.
+
 */
 @import url('https://plusinsta.github.io/discord-plus/src/DiscordPlus-source.theme.css');
 
 .theme-dark {
   --dplus-backdrop: url('https://i.imgur.com/3AiL3yN.png');
-  
+
   --dplus-accent-color-hue: 140;
   --dplus-accent-color-saturation: 100%;
-  --dplus-accent-color-lightness: 17%;
+  --dplus-accent-color-lightness: 22%;
 
-  --dplus-foreground-color-hue-base: 0;
-  --dplus-foreground-color-hue-links: 0;
-  --dplus-foreground-color-saturation-amount: 1;
-  --dplus-foreground-color-lightness-amount: 1;
-  
-  --dplus-background-color-hue: 0;
+  --dplus-foreground-color-hue-base: 140;
+  --dplus-foreground-color-hue-links: 140;
+  --dplus-foreground-color-saturation-amount: 0.6;
+  --dplus-foreground-color-lightness-amount: 1.2;
+
+  --dplus-background-color-hue: 140;
   --dplus-background-color-saturation-amount: 1;
   --dplus-background-color-lightness-amount: 0.05;
-  --dplus-background-color-alpha: 0.8;
+  --dplus-background-color-alpha: 0.85;
 }
 
 .theme-light {
@@ -29,17 +30,17 @@
 
   --dplus-accent-color-hue: 140;
   --dplus-accent-color-saturation: 100%;
-  --dplus-accent-color-lightness: 17%;
+  --dplus-accent-color-lightness: 22%;
 
-  --dplus-foreground-color-hue-base: 0;
-  --dplus-foreground-color-hue-links: 0;
-  --dplus-foreground-color-saturation-amount: 1;
-  --dplus-foreground-color-lightness-amount: 1;
+  --dplus-foreground-color-hue-base: 140;
+  --dplus-foreground-color-hue-links: 140;
+  --dplus-foreground-color-saturation-amount: 0.6;
+  --dplus-foreground-color-lightness-amount: 1.2;
 
-  --dplus-background-color-hue: 0;
+  --dplus-background-color-hue: 140;
   --dplus-background-color-saturation-amount: 1;
   --dplus-background-color-lightness-amount: 0.05;
-  --dplus-background-color-alpha: 0.8;
+  --dplus-background-color-alpha: 0.85;
 }
 
 :root {

@@ -8,7 +8,8 @@
 @import url('https://plusinsta.github.io/discord-plus/src/DiscordPlus-source.theme.css');
 
 .theme-dark {
-  --dplus-backdrop: url('https://i.imgur.com/3AiL3yN.png');
+
+  --dplus-backdrop: url('https://images.unsplash.com/photo-1601513445506-e0887c812f54?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
 
   --dplus-accent-color-hue: 140;
   --dplus-accent-color-saturation: 100%;
@@ -26,7 +27,8 @@
 }
 
 .theme-light {
-  --dplus-backdrop: url('https://i.imgur.com/3AiL3yN.png');
+ 
+  --dplus-backdrop: url('https://images.unsplash.com/photo-1601513445506-e0887c812f54?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
 
   --dplus-accent-color-hue: 140;
   --dplus-accent-color-saturation: 100%;
